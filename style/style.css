@@ -37,8 +37,8 @@ h1 {
   background-size: cover;
 }
 .container {
-  width: 1580px;
-  height: 1080px;
+  width: 90%;
+  height: 100vh;
   position: relative;
   margin: 0 auto;
 }
@@ -72,7 +72,18 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 221px;
+  height: 20vh;
+  position: relative;
+}
+.header img {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  height: 100%;
 }
 .nav-left,
 .nav-right {
@@ -96,22 +107,39 @@ h1 {
   border-bottom: 1px solid #6c5333;
 }
 .intro {
+  height: 70vh;
+  width: 100%;
+  margin-top: 5vh;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
+.wrapper-img img {
+  height: 100%;
+  width: 100%;
+}
+.wrapper-img {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  right: 0;
+  bottom: 0;
+}
+
 h1 {
   font-size: 74px;
   font-family: "inglobal", sans-serif;
   text-transform: uppercase;
-  margin-top: 70px;
+  padding: 10px 0;
 }
 .describe {
-  height: 70px;
+  height: auto;
   align-items: center;
-  margin-top: 105px;
+  width: 50%;
+  padding: 10px 0;
 }
-.flex {
-  display: flex;
-}
+
 .little-text,
 .cities {
   font-size: 24px;
@@ -123,17 +151,13 @@ h1 {
 .cities {
   width: 312px;
   font-size: 16px;
-  height: 69px;
-  margin-left: 50px;
+  height: auto;
 }
-.dark {
-  color: #000;
-}
+
 .location {
   display: flex;
   align-items: center;
-  width: 400px;
-  margin-top: 105px;
+  padding: 10px 0;
 }
 
 .btn {
@@ -143,7 +167,6 @@ h1 {
   border: none;
   color: #fff;
   background: linear-gradient(180deg, #ea9e09, #ffad10);
-  margin-top: 105px;
   font-size: 24px;
   font-weight: 600;
   font-family: "Jost", sans-serif;
@@ -151,18 +174,6 @@ h1 {
 }
 .btn:hover {
   box-shadow: 2px 4px 6.2px rgba(153, 103, 0, 0.2);
-}
-
-.wrapper-img {
-  position: absolute;
-  bottom: 15%;
-  width: 65%;
-  height: 50%;
-  right: -50px;
-}
-
-.wrapper-img img {
-  width: 100%;
 }
 
 /*main*/
@@ -580,47 +591,14 @@ h3 {
 /*media*/
 
 @media screen and (max-width: 1700px) {
-  /*main*/
-  .container {
-    width: 80%;
-    height: 100vh;
-  }
-  .header {
-    height: 17%;
-  }
-  .header img {
-    width: 17%;
-    top: 0;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  h1 {
-    margin-top: 5%;
-  }
-  .describe {
-    margin-top: 8%;
-  }
-  .intro {
-    height: auto;
-  }
-  .intro .btn {
-    margin-top: 8%;
-  }
-  .location {
-    margin-top: 8%;
-  }
   .nav-left,
   .nav-right {
     width: 35%;
   }
   .wrapper-img {
-    bottom: 0;
+    width: 800px;
+    height: 400px;
   }
-  /*about*/
   .about {
     height: auto;
   }
@@ -659,8 +637,6 @@ h3 {
     padding: 40px 0px;
   }
 
-  /*why*/
-
   .why .container {
     width: 90%;
   }
@@ -684,7 +660,6 @@ h3 {
     padding-bottom: 8%;
     padding-top: 4%;
   }
-  /*products*/
   .cards {
     padding: 0;
   }
@@ -709,7 +684,6 @@ h3 {
     margin: auto;
     padding-left: 0;
   }
-  /*order*/
   .order {
     height: auto;
   }
@@ -744,10 +718,34 @@ h3 {
     margin-top: 4%;
   }
 }
+@media screen and (max-width: 1500px) {
+  .card-left {
+    width: 270px;
+    height: 220px;
+  }
+  .card-right {
+    width: 270px;
+  }
+  .product-name {
+    font-size: 16px;
+  }
+  .weight-name,
+  .weight-describe,
+  .time-name,
+  .time-describe,
+  .count-name,
+  .count-describe {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1400px) {
   .nav-left,
   .nav-right {
     width: 40%;
+  }
+  .wrapper-img {
+    width: 650px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -762,35 +760,18 @@ h3 {
   h1 {
     font-size: 54px;
   }
-  .little-text {
-    font-size: 20px;
-  }
   .describe {
-    margin-top: 6%;
-  }
-  .cities {
-    font-size: 14px;
     height: auto;
-  }
-  .location img {
-    height: 60px;
-  }
-  .location {
-    margin-top: 6%;
+    width: 70%;
   }
   .intro .btn {
-    margin-top: 6%;
     font-size: 16px;
     width: 250px;
     height: 80px;
   }
   .wrapper-img {
-    right: -10%;
-    height: auto;
-    width: 60%;
-  }
-  .wrapper-img img {
-    width: 90%;
+    width: 590px;
+    height: 300px;
   }
   .about h2,
   .why h2 {
@@ -889,6 +870,10 @@ h3 {
     width: 50px;
     height: 50px;
   }
+  .wrapper-img {
+    width: 400px;
+    height: 200px;
+  }
   .why-block p {
     width: 250px;
   }
@@ -939,7 +924,7 @@ h3 {
 @media screen and (max-width: 900px) {
   .nav-left,
   .nav-right {
-    width: 40%;
+    width: 35%;
   }
 }
 @media screen and (max-width: 800px) {
@@ -961,34 +946,27 @@ h3 {
     display: none;
   }
   h1 {
-    font-size: 36px;
+    font-size: 48px;
   }
   .intro {
-    padding-top: 40%;
+    padding-top: 45%;
+    margin: 0;
+    height: 70vh;
   }
-  .location {
-    width: 360px;
-  }
-  .cities {
-    margin-left: 20px;
-  }
-  .flex p,
+
   .little-text {
-    font-size: 14px;
+    font-size: 24px;
   }
   .location p {
-    font-size: 12px;
-  }
-  .location img {
-    height: 36px;
+    font-size: 24px;
   }
   .describe {
     height: auto;
   }
   .intro .btn {
-    font-size: 12px;
-    width: 160px;
-    height: 50px;
+    font-size: 24px;
+    width: 300px;
+    height: 70px;
     border-radius: 10px;
   }
   .about h2,
@@ -1058,12 +1036,6 @@ h3 {
   }
 }
 @media screen and (max-width: 670px) {
-  h1 {
-    font-size: 24px;
-  }
-  .intro {
-    padding-top: 55%;
-  }
   .menu-burg hr {
     border: 2px solid #000000;
   }
@@ -1071,6 +1043,25 @@ h3 {
   .item.active {
     height: 50px;
     width: 100px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .little-text {
+    font-size: 16px;
+  }
+  .location p {
+    font-size: 16px;
+  }
+  .intro .btn {
+    font-size: 16px;
+    width: 230px;
+    height: 60px;
+  }
+  .intro {
+    padding-top: 60%;
+    margin: 0;
+    height: 70vh;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1082,24 +1073,21 @@ h3 {
 @media screen and (max-width: 490px) {
   .intro {
     padding-top: 70%;
+    height: 60vh;
   }
   .about h2 {
     width: auto;
   }
-  .flex p,
+  h1 {
+    font-size: 24px;
+  }
   .little-text {
     font-size: 10px;
   }
   .location p {
     font-size: 10px;
-    width: 70%;
   }
-  .location {
-    width: 390px;
-  }
-  .cities {
-    margin-left: 10px;
-  }
+
   .order h3 {
     font-size: 24px;
   }
@@ -1116,15 +1104,6 @@ h3 {
   }
 }
 @media screen and (max-width: 440px) {
-  .location p {
-    font-size: 7px;
-    width: 80%;
-  }
-  .location {
-    width: 200px;
-  }
-}
-@media screen and (max-width: 440px) {
   .order h3 {
     font-size: 18px;
   }
@@ -1136,6 +1115,9 @@ h3 {
   }
 }
 @media screen and (max-width: 400px) {
+  .intro {
+    padding-top: 35vh;
+  }
   .card-left {
     width: 200px;
     height: 170px;
@@ -1148,6 +1130,15 @@ h3 {
   }
 }
 @media screen and (max-width: 300px) {
+  .little-text,
+  .location p,
+  .intro .btn {
+    font-size: 8px;
+  }
+  .intro .btn {
+    width: 120px;
+    height: 40px;
+  }
   h1 {
     font-size: 18px;
   }
