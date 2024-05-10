@@ -164,15 +164,19 @@ h1 {
 
 .btn {
   width: 325px;
-  height: 98px;
+  min-height: 98px;
+  max-height: 98px;
   border-radius: 1em;
   border: none;
-  color: #fff;
   background: linear-gradient(180deg, #ea9e09, #ffad10);
+}
+.link-btn {
   font-size: 1.5em;
   font-weight: 600;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
 }
 .btn:hover {
   box-shadow: 0.1em 0.25em 0.4em rgba(153, 103, 0, 0.2);
@@ -251,7 +255,7 @@ h1 {
 /*why*/
 
 .why .container {
-  height: 1022px;
+  height: 962px;
   width: 1352px;
   margin-bottom: 2em;
 }
@@ -267,7 +271,7 @@ h1 {
   justify-content: space-between;
   flex-direction: column;
   width: 1318px;
-  height: 800px;
+  height: 700px;
   margin-top: 6em;
 }
 .why-up,
@@ -513,8 +517,13 @@ h3 {
 .order .btn {
   width: 325px;
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 5em;
   display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
 }
 .button-help {
   display: block;
@@ -529,6 +538,75 @@ h3 {
 }
 
 /*order*/
+
+/*contacts*/
+.contacts {
+  padding-bottom: 10rem;
+}
+.contacts .container {
+  display: flex;
+  height: 502px;
+
+  justify-content: space-between;
+  margin: auto;
+  width: 1393px;
+}
+.contacts h2 {
+  margin-bottom: 4rem;
+}
+.mail-contacts,
+.number-contacts {
+  display: flex;
+  align-items: center;
+  height: 116px;
+  width: 325px;
+  margin: auto;
+}
+.left map iframe {
+  border-radius: 1.8em;
+  width: 917px;
+  height: 502px;
+}
+.right {
+  background-color: #ffa800;
+  width: 457px;
+  height: 502px;
+  align-content: center;
+  border-radius: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 5% 0;
+}
+.mail-text,
+.number-text {
+  border-left: 1px solid #fff;
+  margin-left: 1em;
+  padding-left: 1em;
+  height: 116px;
+  align-content: center;
+}
+.mail-first,
+.mail-second,
+.number-first,
+.number-second {
+  font-size: 1.5em;
+  font-family: "jost", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+.mail-first-description,
+.mail-second-description {
+  font-size: 1em;
+  font-family: "jost", sans-serif;
+  font-weight: 600;
+  color: #fff4de;
+}
+.number-first {
+  padding-bottom: 1em;
+}
+
+/*contacts*/
 
 .menu-all {
   /* display: none; */
@@ -647,6 +725,7 @@ h3 {
   }
   h2 {
     font-size: 4rem;
+    margin-top: 6rem;
   }
   .why-content {
     width: 100%;
@@ -709,7 +788,17 @@ h3 {
   .order .btn {
     margin-top: 4%;
   }
+  .contacts h2 {
+    font-size: 4rem;
+  }
+  .left map iframe {
+    width: 800px;
+  }
+  .contacts .container {
+    width: 1280px;
+  }
 }
+
 @media screen and (max-width: 1400px) {
   .nav-left,
   .nav-right {
@@ -731,6 +820,23 @@ h3 {
     width: 40%;
   }
   .card-right {
+    width: 60%;
+  }
+  .left map iframe {
+    width: 100%;
+  }
+  .left map {
+    display: block;
+    width: 100%;
+  }
+  .right {
+    width: 38%;
+    height: 100%;
+  }
+  .contacts .container {
+    width: 90%;
+  }
+  .left {
     width: 60%;
   }
 }
@@ -755,9 +861,9 @@ h3 {
     width: 70%;
   }
   .intro .btn {
-    font-size: 1em;
+    font-size: 0.7em;
     width: 250px;
-    height: 80px;
+    min-height: 70px;
   }
   .wrapper-img {
     width: 590px;
@@ -826,12 +932,9 @@ h3 {
   #tabs {
     width: 60%;
   }
-  .count,
+
   .time {
     display: none;
-  }
-  .card-right {
-    display: block;
   }
   .product-name {
     margin-bottom: 0.6em;
@@ -846,7 +949,7 @@ h3 {
   .products h2 {
     font-size: 3em;
     width: auto;
-    margin-top: 7%;
+    margin-top: 5%;
     margin-bottom: 3%;
   }
   .order-help,
@@ -855,13 +958,40 @@ h3 {
   }
   .order .btn {
     width: 250px;
-    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
     font-size: 1em;
   }
   .button-help {
     font-size: 1em;
     width: 190px;
     margin-bottom: 3%;
+  }
+  .contacts {
+    padding-bottom: 8rem;
+  }
+  .contacts .container {
+    height: 400px;
+  }
+  .contacts h2 {
+    font-size: 3rem;
+  }
+  .left map iframe {
+    height: 400px;
+  }
+  .mail-first,
+  .mail-second,
+  .number-first,
+  .number-second {
+    font-size: 1em;
+  }
+  .mail-first-description,
+  .mail-second-description {
+    font-size: 0.7em;
+  }
+  .mail-contacts,
+  .number-contacts {
+    width: 241px;
   }
 }
 
@@ -895,6 +1025,9 @@ h3 {
   .cards {
     grid-auto-rows: 230px;
   }
+  .card-right {
+    display: block;
+  }
   h3 {
     font-size: 2em;
     width: 470px;
@@ -920,6 +1053,27 @@ h3 {
   }
   .button-help {
     margin-top: 0.7px;
+  }
+  .contacts .container {
+    display: block;
+    height: 616px;
+  }
+  .left {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 2%;
+  }
+  .left map {
+    height: 100%;
+  }
+  .left map iframe {
+    height: 100%;
+  }
+  .right {
+    width: 100%;
+    height: 37%;
+    display: flex;
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 900px) {
@@ -948,13 +1102,19 @@ h3 {
   }
   h1 {
     font-size: 3em;
+    padding: 1em 0;
   }
   .intro {
     padding-top: 45%;
     margin: 0;
     height: 70vh;
   }
-
+  .cities {
+    padding-bottom: 2em;
+  }
+  .location {
+    padding: 0;
+  }
   .little-text {
     font-size: 1.5em;
   }
@@ -963,15 +1123,18 @@ h3 {
   }
   .describe {
     height: auto;
+    width: auto;
+    padding-bottom: 2em;
   }
   .intro .btn {
-    font-size: 1.5em;
+    font-size: 0.7em;
     width: 300px;
-    height: 70px;
+    min-height: 80px;
   }
   .about h2,
   .why h2,
-  .products h2 {
+  .products h2,
+  .contacts h2 {
     font-size: 2em;
   }
   .left-part p,
@@ -1038,12 +1201,57 @@ h3 {
   .order .btn {
     font-size: 0.8em;
     width: 160px;
-    height: 50px;
+    max-height: 50px;
+    min-height: 50px;
+
     border-radius: 0.7em;
   }
   .button-help {
     font-size: 0.7em;
     width: 133px;
+  }
+  .mail-first,
+  .mail-second,
+  .number-first,
+  .number-second {
+    font-size: 0.8em;
+  }
+  .mail-first-description,
+  .mail-second-description {
+    font-size: 0.6em;
+  }
+  .contacts .container {
+    height: 500px;
+  }
+  .left {
+    height: 65%;
+  }
+  .right {
+    height: 33%;
+    padding: 0 10%;
+    align-items: center;
+  }
+  .mail-contacts {
+    width: 206px;
+  }
+  .number-contacts {
+    width: 177px;
+  }
+  .mail-text,
+  .number-text {
+    height: 80px;
+  }
+  .number-contacts,
+  .mail-contacts {
+    height: 80px;
+    margin: 0;
+  }
+  .contacts h2 {
+    margin-top: 7%;
+    margin-bottom: 2rem;
+  }
+  .contacts {
+    padding-bottom: 3rem;
   }
 }
 @media screen and (max-width: 670px) {
@@ -1065,9 +1273,10 @@ h3 {
     font-size: 1em;
   }
   .intro .btn {
-    font-size: 1em;
+    font-size: 0.6em;
     width: 230px;
-    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
   }
   .intro {
     padding-top: 60%;
@@ -1092,6 +1301,29 @@ h3 {
   #tabs {
     width: 90%;
   }
+  .mail-first,
+  .mail-second,
+  .number-first,
+  .number-second {
+    font-size: 0.5em;
+  }
+  .mail-first-description,
+  .mail-second-description {
+    font-size: 0.3em;
+  }
+  .contacts .container {
+    height: 350px;
+  }
+  .icon-contacts img {
+    width: 25px;
+    height: 25px;
+  }
+  .mail-contacts {
+    width: 143px;
+  }
+  .number-contacts {
+    width: 126px;
+  }
 }
 @media screen and (max-width: 490px) {
   .intro {
@@ -1106,6 +1338,7 @@ h3 {
   }
   .little-text {
     font-size: 0.7em;
+    width: 250px;
   }
   .location p {
     font-size: 0.7em;
@@ -1122,6 +1355,16 @@ h3 {
   .card {
     height: 180px;
   }
+  .mail-first,
+  .mail-second,
+  .number-first,
+  .number-second {
+    font-size: 0.4em;
+  }
+  .mail-first-description,
+  .mail-second-description {
+    font-size: 0.2em;
+  }
 }
 @media screen and (max-width: 440px) {
   .order h3 {
@@ -1135,6 +1378,21 @@ h3 {
   }
   .card {
     height: 160px;
+  }
+  .mail-text,
+  .number-text,
+  .number-contacts,
+  .mail-contacts {
+    height: 40px;
+  }
+  .right {
+    padding: 0 5%;
+  }
+  .mail-contacts {
+    width: 128px;
+  }
+  .number-contacts {
+    width: 113px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -1166,7 +1424,9 @@ h3 {
   }
   .intro .btn {
     width: 120px;
-    height: 40px;
+    min-height: 36px;
+    max-height: 40px;
+    font-size: 0.3em;
   }
   h1 {
     font-size: 1.2em;
@@ -1174,18 +1434,29 @@ h3 {
   .card {
     height: 130px;
   }
+  .order h3 {
+    font-size: 0.6em;
+  }
+  .order .btn {
+    min-height: 30px;
+    max-height: 350px;
+    width: 80px;
+    font-size: 0.4em;
+  }
+  .icon-contacts {
+    display: none;
+  }
 }
 @media screen and (max-width: 253px) {
   .describe p {
     font-size: 0.5em;
+    width: 180px;
   }
   .about h2,
   .why h2 {
     font-size: 1.5em;
   }
-  .order h3 {
-    font-size: 0.7em;
-  }
+
   #tabs {
     display: block;
     width: 100%;
