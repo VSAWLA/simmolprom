@@ -343,12 +343,17 @@ h1 {
   cursor: pointer;
 }
 #item-2-content,
-#item-3-content {
+#item-3-content,
+#item-4-content,
+#item-5-content,
+#item-6-content,
+#item-7-content {
   display: none;
 }
 
 .item.active {
   background: #ffa800;
+  color: #f6efb9;
 }
 
 .item {
@@ -362,19 +367,22 @@ h1 {
 }
 #tabs {
   margin: auto;
-  width: 70%;
-  justify-content: space-between;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  gap: 23px;
 }
 .item {
   display: inline-block;
   padding: 1em;
-  height: auto;
-  width: auto;
+  height: 120px;
+  width: 100%;
   text-align: center;
   border-radius: 1em;
   border: 1px solid #ffa800;
+  align-content: center;
 }
+
 .item-1-content {
   display: block;
 }
@@ -722,7 +730,15 @@ h3 {
   }
 }
 /*media*/
-
+@media screen and (max-width: 1735px) {
+  #tabs {
+    grid-template-columns: 32% 32% 32%;
+    gap: 29px;
+  }
+  .item {
+    font-size: 1.3em;
+  }
+}
 @media screen and (max-width: 1700px) {
   .nav-left,
   .nav-right {
@@ -986,11 +1002,12 @@ h3 {
     margin: auto;
     margin-top: 5%;
   }
+  #tabs {
+    grid-template-columns: 32% 32% 32%;
+    gap: 29px;
+  }
   .item {
     font-size: 1em;
-  }
-  #tabs {
-    width: 60%;
   }
   .product-name {
     margin-bottom: 0.6em;
@@ -1138,6 +1155,14 @@ h3 {
   .nav-right {
     width: 35%;
   }
+  #tabs {
+    grid-template-columns: 32% 32% 32%;
+    gap: 29px;
+  }
+  .item {
+    font-size: 1em;
+    height: 100px;
+  }
 }
 @media screen and (max-width: 800px) {
   .main {
@@ -1237,19 +1262,25 @@ h3 {
   .card-right {
     display: flex;
   }
-  #tabs {
-    width: 70%;
-  }
   .tabs-content {
-    padding: 0;
+    padding: 0.5em 0;
+  }
+  #tabs {
+    display: block;
+    width: 100%;
+  }
+  .item,
+  .item.active {
+    width: 100%;
+    margin: 0.7em 0;
+    border-radius: 0.5em;
+    height: 50px;
+    font-size: 0.8rem;
   }
   .card {
     padding-bottom: 2em;
     margin: 2.5em 0;
     height: 270px;
-  }
-  .item {
-    font-size: 0.8em;
   }
   .order {
     background-image: url("../img/order-bg-phone.png");
@@ -1328,11 +1359,6 @@ h3 {
   .menu-burg hr {
     border: 2px solid #000000;
   }
-  .item,
-  .item.active {
-    height: 50px;
-    width: 100px;
-  }
   h1 {
     font-size: 2em;
   }
@@ -1398,6 +1424,12 @@ h3 {
   }
   .number-contacts {
     width: 167px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .item,
+  .item.active {
+    height: 50px;
   }
 }
 @media screen and (max-width: 490px) {
@@ -1553,15 +1585,6 @@ h3 {
   .intro {
     padding-top: 35vh;
   }
-  .item,
-  .item.active {
-    font-size: 0.6em;
-    height: 4em;
-    width: 7.5em;
-  }
-  #tabs {
-    width: 100%;
-  }
   .card {
     width: 90%;
   }
@@ -1581,6 +1604,9 @@ h3 {
     min-height: 36px;
     max-height: 40px;
     font-size: 0.3em;
+  }
+  .item {
+    height: 60px;
   }
   h1 {
     font-size: 1.2em;
@@ -1631,15 +1657,6 @@ h3 {
     font-size: 1.5em;
   }
 
-  #tabs {
-    display: block;
-    width: 100%;
-  }
-  .item,
-  .item.active {
-    width: 100%;
-    margin: 0.7em 0;
-  }
   .card-left {
     height: 75px;
   }
