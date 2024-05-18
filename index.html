@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
+    <script src="script/form.js"></script>
     <title>СИММОЛПРОМ</title>
   </head>
   <body>
@@ -59,7 +60,10 @@
             </p>
           </div>
           <div class="location">
-            <p class="cities">Работаем по&nbsp;всей России</p>
+            <div class="flex">
+              <img src="img/icon-location.png" alt="location" />
+              <p class="cities">От&nbsp;Калининграда до&nbsp;Байкала</p>
+            </div>
           </div>
 
           <button class="btn">
@@ -78,36 +82,37 @@
         <div class="left-part">
           <p class="about-left">ООО «СимбирскМолПром»</p>
           <p class="about-left-main">
-            Сегодня «СимбирскМолПром» выпускает порядка 25 наименований
-            плавленых сыров, среди наиболее популярных позиций — классические
-            сыры, такие, как&nbsp;колбасный копченый «Волжский», «Шоколадный»,
-            «Янтарь», «Омичка», «Российский», «Дружба». Компания сделала ставку
-            на&nbsp;традиционную рецептуру, вместе с&nbsp;тем&nbsp;выпускает
-            плавленый сыр, что&nbsp;называется, на&nbsp;любителя. Например,
-            добавляет в&nbsp;сыр натуральные креветки или&nbsp;кусочки грибов.
-            В&nbsp;производстве используется в&nbsp;основном местное сырье (сыры
-            твердые, творог, сливочное масло...), поэтому продукты от&nbsp;ООО
-            «СимбирскМолПром» не&nbsp;только очень вкусны, но&nbsp;и&nbsp;
-            полезны.
+            «СимбирскМолПром» — это динамично развивающаяся компания,
+            производящая продукцию под&nbsp;брендом «СМП». Наши товары уверенно
+            занимают место на&nbsp;полках как&nbsp;крупных федеральных сетей,
+            так&nbsp;и&nbsp;региональных магазинов от Калининграда до Байкала.
+            Наш ассортимент включает в&nbsp;себя широкий выбор плавленых
+            и&nbsp;творожных сыров, а&nbsp;также&nbsp;молокосодержащих
+            продуктов. Мы придерживаемся традиционной рецептуры,
+            но&nbsp;также&nbsp;предлагаем плавленый сыр с&nbsp;необычными
+            вкусами, такими как&nbsp;чеснок и&nbsp;зелень, ветчина
+            или&nbsp;грибы, для&nbsp;тех,&nbsp;кто&nbsp;любит разнообразие.
+            В&nbsp;производстве мы&nbsp;используем преимущественно ингредиенты
+            от&nbsp;поставщиков Ульяновской области, например, твёрдые сыры,
+            творог и сливочное масло.
           </p>
         </div>
         <div class="right-part">
           <div class="right-up">
             <p class="right-up-p">
-              «СимбирскМолПром» - компания молодая, однако качественная
-              продукция с&nbsp;логотипом «СМП» чувствует себя вполне уверенно
-              на&nbsp;полках магазинов — рядом с&nbsp;товарами старожилов
-              молокоперерабатывающей отрасли.
+              Для&nbsp;нас&nbsp;главными критериями являются безопасность, вкус
+              и&nbsp;польза наших продуктов. Мы&nbsp;обеспечиваем высокое
+              качество благодаря современному оборудованию, опытным сотрудникам
+              и&nbsp;собственной лаборатории.
             </p>
           </div>
           <div class="right-down">
             <p class="right-down-p">
-              Сегодня продукты с&nbsp;логотипом «СМП» можно приобрести
-              в&nbsp;различных торговых сетях и&nbsp;розничных продуктовых
-              точках формата «магазин у&nbsp;дома». Часть плавленых сыров
-              от&nbsp;ООО «СимбирскМолПром» реализуется в&nbsp;соседних регионах
-              — Татарстане, Самарской области, Чувашии, Мордовии, Пензенской
-              области.
+              От&nbsp;получения сырья до&nbsp;момента расфасовки
+              вся&nbsp;продукция проходит строгий контроль на&nbsp;каждом этапе.
+              Компания «СимбирскМолПром» открыта для&nbsp;взаимовыгодного
+              сотрудничества. Мы&nbsp;готовы рассмотреть ваши предложения
+              о&nbsp;партнёрстве и&nbsp;совместной работе.
             </p>
           </div>
         </div>
@@ -161,55 +166,23 @@
         <div id="tabs-block">
           <div id="tabs">
             <div class="item active" id="item-1">
-              Плавленые сыры пастообразные
+              Сыры плавленые и творожные
             </div>
-            <div class="item" id="item-2">Творожные сыры</div>
-            <div class="item" id="item-3">Плавленые сыры колбасные</div>
-            <div class="item" id="item-4">Плавленые сыры ломтевые</div>
-            <div class="item" id="item-5">
-              Молокосодержащие продукты ломтевые
+            <div class="item" id="item-2">Молокосодержащие продукты</div>
+            <div class="item" id="item-3">
+              Сыры и м/с продукты ломтевые брикет фольга
             </div>
-            <div class="item" id="item-6">
-              Молокосодержащие продукты пастообразные
-            </div>
-            <div class="item" id="item-7">
-              Молокосодержащие продукты колбасные копченые
+            <div class="item" id="item-4">
+              Сыры и м/с продукты плавленые копченые колбасные
             </div>
           </div>
           <div class="tabs-content">
             <div class="item-content" id="item-1-content">
               <div class="cards">
-                <div class="card first">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-1.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">СЫР ПЛАВЛЕНЫЙ СЛИВОЧНЫЙ</div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >400 г<br />Массовая доля жира 55%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">20 штук</span>
-                    </div>
-                  </div>
-                </div>
                 <div class="card">
                   <div class="card-left">
                     <div class="card-box">
-                      <img src="img/product-2.png" alt="product-image" />
+                      <img src="img/product-1.png" alt="product-image" />
                     </div>
                   </div>
                   <div class="card-right">
@@ -236,10 +209,94 @@
                     </div>
                   </div>
                 </div>
+                <div class="card first">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-2.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">СЫР ПЛАВЛЕНЫЙ СЛИВОЧНЫЙ</div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >400 г<br />Массовая доля жира 55%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
                 <div class="card">
                   <div class="card-left">
                     <div class="card-box">
                       <img src="img/product-3.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">СЫР СЛИВОЧНЫЙ ТВОРОЖНЫЙ</div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >400 г<br />Массовая доля жира 30%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от +2 до +6</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-4.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      СЫР СЛИВОЧНЫЙ ТВОРОЖНЫЙ<br />
+                      С ЧЕСНОКОМ И ЗЕЛЕНЬЮ
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >400 г<br />Массовая доля жира 30%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >80 суток<br />
+                        при температуре хранения от +2 до +6</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-5.png" alt="product-image" />
                     </div>
                   </div>
                   <div class="card-right">
@@ -266,7 +323,7 @@
                 <div class="card">
                   <div class="card-left">
                     <div class="card-box">
-                      <img src="img/product-4.png" alt="product-image" />
+                      <img src="img/product-6.png" alt="product-image" />
                     </div>
                   </div>
                   <div class="card-right">
@@ -295,282 +352,6 @@
               </div>
             </div>
             <div class="item-content" id="item-2-content">
-              <div class="cards">
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-5.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">СЫР СЛИВОЧНЫЙ ТВОРОЖНЫЙ</div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >400 г<br />Массовая доля жира 30%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от +2 до +6</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">20 штук</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-6.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      СЫР СЛИВОЧНЫЙ ТВОРОЖНЫЙ<br />
-                      С ЧЕСНОКОМ И ЗЕЛЕНЬЮ
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >400 г<br />Массовая доля жира 30%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >80 суток<br />
-                        при температуре хранения от +2 до +6</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">20 штук</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item-content" id="item-3-content">
-              <div class="cards">
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-16.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Сыр колбасный копченый «КРЫМСКИЙ»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Массовая доля жира:</span>
-                      <span class="weight-describe">20%</span>
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >80 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe"
-                        >15 целых<br />
-                        или 30 половинок</span
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-17.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Сыр колбасный копченый «ВОЛЖСКИИЙ»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Массовая доля жира:</span>
-                      <span class="weight-describe">20%</span>
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe"
-                        >15 целых<br />
-                        или 30 половинок</span
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item-content" id="item-4-content">
-              <div class="cards">
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-15.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">СЫР ПЛАВЛЕНЫЙ СЛИВОЧНЫЙ</div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >90 г<br />Массовая доля жира 55%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">???</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item-content" id="item-5-content">
-              <div class="cards">
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-11.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Молокосодержащий продукт «НАША&nbsp;ОРБИТА»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >70 г<br />Массовая доля жира 20%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">60 штук</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-12.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Молокосодержащий продукт «НАШ&nbsp;РОССИЙСКИЙ»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >70 г<br />Массовая доля жира 20%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">60 штук</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-13.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Молокосодержащий продукт «ГОРОДСКОЙ&nbsp;ПЕЙЗАЖ»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >70 г<br />Массовая доля жира 30%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >90 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">60 штук</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-left">
-                    <div class="card-box">
-                      <img src="img/product-14.png" alt="product-image" />
-                    </div>
-                  </div>
-                  <div class="card-right">
-                    <div class="product-name">
-                      Молокосодержащий продукт «НАША&nbsp;ДРУЖБА»
-                    </div>
-                    <div class="weight">
-                      <span class="weight-name">Масса:</span>
-                      <span class="weight-describe"
-                        >70 г<br />Массовая доля жира 20%</span
-                      >
-                    </div>
-                    <div class="time">
-                      <span class="time-name">Срок годности: </span>
-                      <span class="time-describe"
-                        >80 суток<br />
-                        при температуре хранения от 0 до +4</span
-                      >
-                    </div>
-                    <div class="count">
-                      <span class="count-name">Количество в упаковке:</span>
-                      <span class="count-describe">60 штук</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item-content" id="item-6-content">
               <div class="cards">
                 <div class="card">
                   <div class="card-left">
@@ -659,10 +440,98 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card">
                   <div class="card-left">
                     <div class="card-box">
                       <img src="img/product-10.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «ШОКОЛАДНЫЙ»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >400 г<br />Массовая доля жира 50%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >60 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-11.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «НАША ОМИЧКА»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >400 г<br />Массовая доля жира 50%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >60 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-12.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «НАШ ГОЛЛАНДСКИЙ»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >600 г<br />Массовая доля жира 50%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >80 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">20 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-13.png" alt="product-image" />
                     </div>
                   </div>
                   <div class="card-right">
@@ -690,8 +559,124 @@
                 </div>
               </div>
             </div>
-            <div class="item-content" id="item-7-content">
+            <div class="item-content" id="item-3-content">
               <div class="cards">
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-14.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «НАША&nbsp;ОРБИТА»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >70 г<br />Массовая доля жира 20%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">60 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-15.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «НАШ&nbsp;РОССИЙСКИЙ»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >70 г<br />Массовая доля жира 20%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">60 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-16.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «ГОРОДСКОЙ&nbsp;ПЕЙЗАЖ»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >70 г<br />Массовая доля жира 30%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">60 штук</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-17.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Молокосодержащий продукт «НАША&nbsp;ДРУЖБА»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >70 г<br />Массовая доля жира 20%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >80 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">60 штук</span>
+                    </div>
+                  </div>
+                </div>
                 <div class="card">
                   <div class="card-left">
                     <div class="card-box">
@@ -699,11 +684,102 @@
                     </div>
                   </div>
                   <div class="card-right">
+                    <div class="product-name">СЫР ПЛАВЛЕНЫЙ СЛИВОЧНЫЙ</div>
+                    <div class="weight">
+                      <span class="weight-name">Масса:</span>
+                      <span class="weight-describe"
+                        >90 г<br />Массовая доля жира 55%</span
+                      >
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe">46 штук</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-content" id="item-4-content">
+              <div class="cards">
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-19.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
                     <div class="product-name">
-                      Сыр «КОЛБАСНЫЙ&nbsp;КОПЧЕНЫЙ»
+                      Сыр колбасный копченый «КРЫМСКИЙ»
                     </div>
                     <div class="weight">
                       <span class="weight-name">Массовая доля жира:</span>
+                      <span class="weight-describe">20%</span>
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >80 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe"
+                        >15 целых<br />
+                        или 30 половинок</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-20.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">
+                      Сыр колбасный копченый «ВОЛЖСКИИЙ»
+                    </div>
+                    <div class="weight">
+                      <span class="weight-name">Массовая доля жира:</span>
+                      <span class="weight-describe">20%</span>
+                    </div>
+                    <div class="time">
+                      <span class="time-name">Срок годности: </span>
+                      <span class="time-describe"
+                        >90 суток<br />
+                        при температуре хранения от 0 до +4</span
+                      >
+                    </div>
+                    <div class="count">
+                      <span class="count-name">Количество в упаковке:</span>
+                      <span class="count-describe"
+                        >15 целых<br />
+                        или 30 половинок</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-left">
+                    <div class="card-box">
+                      <img src="img/product-21.png" alt="product-image" />
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="product-name">Сыр «КОЛБАСНЫЙ КОПЧЕНЫЙ»</div>
+                    <div class="weight">
+                      <span class="weight-name"
+                        >Весовой Массовая доля жира:</span
+                      >
                       <span class="weight-describe">30%</span>
                     </div>
                     <div class="time">
@@ -722,10 +798,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="card last">
+                <div class="card">
                   <div class="card-left">
                     <div class="card-box">
-                      <img src="img/product-19.png" alt="product-image" />
+                      <img src="img/product-22.png" alt="product-image" />
                     </div>
                   </div>
                   <div class="card-right">
@@ -733,7 +809,9 @@
                       Молокосодержащий продукт колбасный копченый «ОСОБЫЙ»
                     </div>
                     <div class="weight">
-                      <span class="weight-name">Массовая доля жира:</span>
+                      <span class="weight-name"
+                        >Весовой Массовая доля жира:</span
+                      >
                       <span class="weight-describe">25%</span>
                     </div>
                     <div class="time">
@@ -746,7 +824,8 @@
                     <div class="count">
                       <span class="count-name">Количество в упаковке:</span>
                       <span class="count-describe"
-                        >15 целых<br />или 30 половинок</span
+                        >15 целых<br />
+                        или 30 половинок</span
                       >
                     </div>
                   </div>

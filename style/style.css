@@ -171,6 +171,16 @@ h1 {
   width: 50%;
   padding: 0.5em 0;
 }
+.flex {
+  display: flex;
+  align-items: center;
+}
+.cities {
+  margin-left: 10px;
+}
+.flex img {
+  height: 40px;
+}
 
 .little-text,
 .cities {
@@ -1199,11 +1209,10 @@ h3 {
   .main-number {
     font-size: 1.5em;
   }
-  .cities {
-    padding-bottom: 2em;
-  }
+
   .location {
     padding: 0;
+    margin-bottom: 2em;
   }
   .little-text {
     font-size: 1.5em;
@@ -1452,6 +1461,9 @@ h3 {
   }
   .location p {
     font-size: 0.7em;
+  }
+  .flex img {
+    height: 20px;
   }
 
   .order h3 {
